@@ -2,10 +2,11 @@
   "name": "hlp-ukr",
   "version": "1.0.0",
   "description": "sum web app two hlp ukr",
+  "license": "MIT",
   "scripts": {
-    "start:ui": "parcel src/ui/index.html ",
+    "start:ui": "parcel src/ui/index.html",
     "start:server": "nodemon src/server/index.ts",
-    "build": "parcel build",
+    "build": "parcel build src/ui/index.html",
     "lint": "eslint src/**/*.tsx",
     "prettier": "prettier --write .",
     "test": "jest",
