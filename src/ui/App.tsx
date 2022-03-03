@@ -5,7 +5,7 @@ import Home from "./components/pages/Home";
 import Order from "./components/pages/Order";
 
 const App: FC = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/hlp-ukr">
     <AppDrawer>
       <Routes>
         <Route path="/home" element={<Home />} />
