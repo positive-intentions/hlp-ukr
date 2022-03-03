@@ -1,0 +1,29 @@
+type Query {
+  stock(timeInDays: Int!): Stock!
+  herd(timeInDays: Int!): [LabYak]!
+}
+
+type Mutation {
+  order(timeInDays: Int!, customerOrder: CustomerOrder!): Stock
+}
+
+type Stock {
+  milk: Float!
+  skins: Int!
+}
+
+input StockInput {
+  milk: Float
+  skins: Int
+}
+
+type LabYak {
+  name: String!
+  age: Float!
+  ageLastShaved: Float!
+}
+
+input CustomerOrder {
+  customer: String!
+  order: StockInput!
+}
