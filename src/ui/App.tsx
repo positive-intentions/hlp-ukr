@@ -5,12 +5,6 @@ import Home from "./components/pages/Home";
 import Order from "./components/pages/Order";
 
 const App: FC = () => {
-  // useEffect(() => {
-  //   if (!window.location.pathname.startsWith('/hlp-ukr')) {
-  //     window.location.assign('/hlp-ukr');
-  //   }
-  // }, []);
-
   return (
     <HashRouter>
       <AppDrawer>

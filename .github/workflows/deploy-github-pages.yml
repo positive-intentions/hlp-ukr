@@ -10,35 +10,46 @@ jobs:
     name: deploy to github pages
     runs-on: ubuntu-latest
 
-    steps:
-      - name: build-statics
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
-      # - run: npm install
-      #   env:
-      #     GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build --public-url ./
-      # - run: npm run build
-      #   env:
-      #     GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: test --coverage
-      # - run: npm run build-storybook
-      #   env:
-      #     GITHUB_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    jobs:
+      install:
+        steps:
+          - name: build-statics
+            uses: actions/checkout@v2
+          - uses: actions/setup-node@v2
+            with:
+              node-version: '14'
+          - uses: borales/actions-yarn@v2.3.0
+            with:
+              cmd: install
 
-      - name: deploy to github pages
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: ./dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      lint:
+        needs: [install]
+        steps:
+          - uses: borales/actions-yarn@v2.3.0
+            with:
+              cmd: lint
+
+      test:
+        needs: [install]
+        steps:
+          - uses: borales/actions-yarn@v2.3.0
+            with:
+              cmd: test --coverage
+
+      build:
+        needs: [lint, test]
+        steps:
+          - uses: borales/actions-yarn@v2.3.0
+            with:
+              cmd: build --public-url ./
+
+      deploy:
+        needs: [build]
+        steps:
+          - name: deploy to github pages
+            uses: crazy-max/ghaction-github-pages@v2
+            with:
+              target_branch: gh-pages
+              build_dir: ./dist
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
