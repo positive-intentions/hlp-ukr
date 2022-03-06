@@ -12,7 +12,7 @@ const App: FC = () => {
   // }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
       <AppDrawer>
         <Routes>
           <Route path="/home" element={<Home />} />
