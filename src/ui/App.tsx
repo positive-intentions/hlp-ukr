@@ -17,7 +17,7 @@ const App: FC = () => {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/order" element={<Order />} />
-          <Route path="" element={<Navigate replace to="home" />} />
+          <Route path="*" element={<Navigate replace to="home" />} />
         </Routes>
       </AppDrawer>
     </HashRouter>
