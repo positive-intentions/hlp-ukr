@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn run lint
+      - run: yarn run eslint src/**/*.tsx
 
   test:
     name: test
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn run test --coverage
+      - run: yarn run jest --coverage
 
   build:
     name: build
