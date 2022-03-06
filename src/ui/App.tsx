@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import AppDrawer from "./components/mulecules/AppDrawer";
 import Home from "./components/pages/Home";
 import Order from "./components/pages/Order";
@@ -12,7 +12,7 @@ const App: FC = () => {
   // }, []);
 
   return (
-    <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+    <HashRouter>
       <AppDrawer>
         <Routes>
           <Route path="/home" element={<Home />} />
@@ -20,7 +20,7 @@ const App: FC = () => {
           <Route path="" element={<Navigate replace to="home" />} />
         </Routes>
       </AppDrawer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
