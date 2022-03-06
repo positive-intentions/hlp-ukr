@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn lint
+      - run: yarn run lint
 
   test:
     name: test
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn test --coverage
+      - run: yarn run test --coverage
 
   build:
     name: build
@@ -51,7 +51,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'yarn'
-      - run: yarn build --public-url ./
+      - run: yarn run build --public-url ./
 
   deploy:
     name: deploy to github pages
