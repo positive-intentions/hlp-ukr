@@ -124,7 +124,7 @@ export default function AppDrawer({ children }: AppDrawerProps) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div">
-            Yak shop
+            hlp ukr
           </Typography>
         </Toolbar>
       </AppBar>
