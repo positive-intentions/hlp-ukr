@@ -53,36 +53,21 @@ jobs:
         with:
           cmd: run test --coverage
 
-  build:
-    name: build
+  deploy:
+    name: deploy to github pages
     runs-on: ubuntu-latest
-    needs: [lint, test]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/cache@v2
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - uses: actions/cache@v2
-        with:
-          path: '**/dist'
-          key: ${{ runner.os }}-dist-${{ hashFiles('**/yarn.lock') }}
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: install --frozen-lockfile
       - uses: borales/actions-yarn@v2.3.0
         with:
           cmd: run build
-
-  deploy:
-    name: deploy to github pages
-    runs-on: ubuntu-latest
-    needs: [build]
-    steps:
-      - uses: actions/cache@v2
-        with:
-          path: '**/dist'
-          key: ${{ runner.os }}-dist-${{ hashFiles('**/yarn.lock') }}
       - uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
