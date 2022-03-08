@@ -3,6 +3,18 @@
   "version": "1.0.0",
   "description": "sum web app two hlp ukr",
   "license": "MIT",
+  "pwaManifest": {
+    "short_name": "hlp-ukr",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "sum web app two hlp ukr",
+    "generateIconOptions": {
+      "baseIcon": "./src/ui/icons/cat.jpg",
+      "sizes": [192, 384, 512],
+      "genFavicons": true
+    }
+  },
   "scripts": {
     "start:ui": "parcel src/ui/index.html",
     "start:server": "nodemon src/server/index.ts",
@@ -31,7 +43,7 @@
     "graphql-import-node": "^0.0.4",
     "graphql-tools": "^8.2.0",
     "i18next": "^21.6.13",
-    "parcel": "^2.2.1",
+    "parcel": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-i18next": "^11.15.5",
@@ -60,6 +72,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^27.5.0",
     "nodemon": "^2.0.15",
+    "parcel-config-pwa-manifest": "^0.1.1",
     "prettier": "2.5.1",
     "serve": "^13.0.2",
     "ts-jest": "^27.1.3",
