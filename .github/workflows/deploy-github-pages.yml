@@ -71,7 +71,7 @@ jobs:
           cmd: run build --public-url ./
       - uses: actions/cache@v2
         with:
-          path: './dist'
+          path: '**/dist'
           key: ${{ runner.os }}-dist-${{ hashFiles('**/yarn.lock') }}
 
   deploy:
@@ -81,7 +81,7 @@ jobs:
     steps:
       - uses: actions/cache@v2
         with:
-          path: './dist'
+          path: '**/dist'
           key: ${{ runner.os }}-dist-${{ hashFiles('**/yarn.lock') }}
       - uses: crazy-max/ghaction-github-pages@v2
         with:
