@@ -19,6 +19,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import DateRangeIcon from "@mui/icons-material/DateRange";
+import SpeedIcon from '@mui/icons-material/Speed';
 import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 
@@ -147,6 +148,17 @@ export default function AppDrawer({ children }: AppDrawerProps) {
                 <HomeIcon />
               </ListItemIcon>
               <ListItemText primary="Home" />
+            </ListItem>
+            <ListItem
+              button
+              component={Link}
+              to="/calibration"
+              data-testid="nav-calibration-button"
+            >
+              <ListItemIcon>
+                <SpeedIcon />
+              </ListItemIcon>
+              <ListItemText primary="calibration" />
             </ListItem>
             <ListItem
               button
