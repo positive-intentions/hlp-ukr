@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { blue, yellow } from '@mui/material/colors';
+import { blue } from '@mui/material/colors';
 import './intl/i18n';
 import App from './App';
 
