@@ -2,7 +2,7 @@
     "name":"hlp-ukr",
     "short_name":"hlp-ukr",
     "start_url":"/hlp-ukr",
-    "scope":"./hlp-ukr",
+    "scope":"/hlp-ukr",
     "description":"sum web app two hlp ukr",
     "theme_color":"white",
     "background_color":"#fff",
