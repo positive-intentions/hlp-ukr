@@ -1,8 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { blue, yellow } from '@mui/material/colors';
 import './intl/i18n';
 import App from './App';
+
+const theme = createTheme({
+  palette: {
+    primary: blue,
+    background: {
+      default: "#ffff8d"
+    },
+  },
+});
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000/graphql',
@@ -11,7 +22,9 @@ const client = new ApolloClient({
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
   </ApolloProvider>,
   document.getElementById('app-root'),
 );
