@@ -23,19 +23,15 @@ export const resolvers = {
   Query: {
     // async stock(_: void, args: QueryStockArgs): Promise<Stock> {
     //   const databaseResponse = (await getDatabaseReponse()) as string;
-
     //   const stock = calculateStock(
     //     args.timeInDays,
     //     JSON.parse(databaseResponse)
     //   );
-
     //   return stock;
     // },
     // async herd(_: void, args: QueryHerdArgs): Promise<LabYak[]> {
     //   const databaseResponse = (await getDatabaseReponse()) as DatabaseResponse;
-
     //   const herd = calculateHerd(args.timeInDays, databaseResponse);
-
     //   return herd;
     // },
   },

@@ -2053,6 +2053,14 @@
     globals "^13.2.0"
     nullthrows "^1.1.1"
 
+"@parcel/packager-raw-url@2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-raw-url/-/packager-raw-url-2.3.2.tgz#9dc8e9a5cb3f12a41ec15603aa81e973e015fcd4"
+  integrity sha512-xkV/fC5OtMi8xIOO6aRAQcIR2rmRfKvVCME4aXfMj4pKSqvZKyF75/UsIezAt41GTaO0H/hYIUTQUJdzI0wq5g==
+  dependencies:
+    "@parcel/plugin" "2.3.2"
+    "@parcel/utils" "2.3.2"
+
 "@parcel/packager-raw@2.3.2":
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/@parcel/packager-raw/-/packager-raw-2.3.2.tgz#869cc3e7bee8ff3655891a0af400cf4e7dd4f144"
@@ -2069,6 +2077,16 @@
     "@parcel/types" "2.3.2"
     "@parcel/utils" "2.3.2"
     posthtml "^0.16.4"
+
+"@parcel/packager-xml@2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@parcel/packager-xml/-/packager-xml-2.3.2.tgz#22070572a6152bc04d51e8c73aae1f5eaaaa113b"
+  integrity sha512-kHDsb6h32qbAI2PNsaxIesDKRA1CghilVRyYRkrKmmhjo5NjVrvM0Uq59ctgjudG3FDcPaAJXl+8QYTQ/CHUXQ==
+  dependencies:
+    "@parcel/plugin" "2.3.2"
+    "@parcel/types" "2.3.2"
+    "@parcel/utils" "2.3.2"
+    "@xmldom/xmldom" "^0.7.5"
 
 "@parcel/plugin@2.3.2":
   version "2.3.2"
@@ -2933,6 +2951,11 @@
   integrity sha512-WwB53ikYudh9pIorgxrkHKrQZcCqNM/Q/bDzZBffEaGUKGuHrRb3zZUT9Sh2qw9yogC7SsdRmQ1ER0pqvd3bfw==
   dependencies:
     tslib "^2.3.0"
+
+"@xmldom/xmldom@^0.7.5":
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.5.tgz#09fa51e356d07d0be200642b0e4f91d8e6dd408d"
+  integrity sha512-V3BIhmY36fXZ1OtVcI9W+FxQqxVLsPKcNjWigIaa81dLC9IolJl5Mt4Cvhmr0flUnjSpTdrbMTSbXqYqV5dT6A==
 
 "@zeit/schemas@2.6.0":
   version "2.6.0"
@@ -8284,6 +8307,11 @@ process-nextick-args@~2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
+
+process@^0.11.10:
+  version "0.11.10"
+  resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
+  integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
 progress@^2.0.3:
   version "2.0.3"
