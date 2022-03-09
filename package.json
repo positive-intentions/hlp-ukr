@@ -3,22 +3,6 @@
   "version": "1.0.0",
   "description": "sum web app two hlp ukr",
   "license": "MIT",
-  "pwaManifest": {
-    "short_name": "hlp-ukr",
-    "start_url": ".",
-    "display": "standalone",
-    "background_color": "#fff",
-    "description": "sum web app two hlp ukr",
-    "generateIconOptions": {
-      "baseIcon": "./src/ui/icons/cat.jpg",
-      "sizes": [
-        192,
-        384,
-        512
-      ],
-      "genFavicons": true
-    }
-  },
   "scripts": {
     "start:ui": "parcel src/ui/index.html",
     "start:server": "nodemon src/server/index.ts",
@@ -67,6 +51,7 @@
     "@parcel/core": "^2.3.2",
     "@parcel/packager-raw-url": "2.3.2",
     "@parcel/packager-xml": "2.3.2",
+    "@parcel/transformer-webmanifest": "2.3.2",
     "@playwright/test": "^1.18.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
