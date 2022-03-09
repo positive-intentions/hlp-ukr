@@ -15,3 +15,8 @@ ReactDOM.render(
   </ApolloProvider>,
   document.getElementById('app-root'),
 );
+
+navigator.serviceWorker.register(
+  new URL('service-worker.js', import.meta.url),
+  {type: 'module'}
+);
