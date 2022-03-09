@@ -15,9 +15,11 @@ jobs:
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - uses: borales/actions-yarn@v2.3.0
+      - uses: actions/setup-node@v2
         with:
-          cmd: install --frozen-lockfile
+          node-version: '14'
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
 
   lint:
     needs: [install]
@@ -29,12 +31,16 @@ jobs:
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - uses: borales/actions-yarn@v2.3.0
+      - uses: actions/setup-node@v2
         with:
-          cmd: install --frozen-lockfile
-      - uses: borales/actions-yarn@v2.3.0
+          node-version: '14'
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - uses: actions/setup-node@v2
         with:
-          cmd: lint
+          node-version: '14'
+          cache: 'yarn'
+      - run: yarn lint
 
   test:
     name: test
@@ -46,12 +52,16 @@ jobs:
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - uses: borales/actions-yarn@v2.3.0
+      - uses: actions/setup-node@v2
         with:
-          cmd: install --frozen-lockfile
-      - uses: borales/actions-yarn@v2.3.0
+          node-version: '14'
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - uses: actions/setup-node@v2
         with:
-          cmd: test --coverage
+          node-version: '14'
+          cache: 'yarn'
+      - run: yarn test --coverage
 
   deploy:
     name: deploy to github pages
@@ -63,12 +73,16 @@ jobs:
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
-      - uses: borales/actions-yarn@v2.3.0
+      - uses: actions/setup-node@v2
         with:
-          cmd: install --frozen-lockfile
-      - uses: borales/actions-yarn@v2.3.0
+          node-version: '14'
+          cache: 'yarn'
+      - run: yarn install --frozen-lockfile
+      - uses: actions/setup-node@v2
         with:
-          cmd: build
+          node-version: '14'
+          cache: 'yarn'
+      - run: yarn build
       - uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
