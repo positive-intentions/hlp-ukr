@@ -17,7 +17,7 @@ jobs:
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: install --force --frozen-lockfile
+          cmd: install --frozen-lockfile
 
   lint:
     needs: [install]
@@ -34,7 +34,7 @@ jobs:
           cmd: install --frozen-lockfile
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: run lint
+          cmd: lint
 
   test:
     name: test
@@ -51,7 +51,7 @@ jobs:
           cmd: install --frozen-lockfile
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: run test --coverage
+          cmd: test --coverage
 
   deploy:
     name: deploy to github pages
@@ -68,7 +68,7 @@ jobs:
           cmd: install --frozen-lockfile
       - uses: borales/actions-yarn@v2.3.0
         with:
-          cmd: run build
+          cmd: build
       - uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
