@@ -13,3 +13,5 @@ async function activate() {
   );
 }
 addEventListener('activate', e => e.waitUntil(activate()));
+
+addEventListener('fetch',() => console.info("fetch listener from sw called."));
