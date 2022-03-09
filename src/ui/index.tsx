@@ -17,6 +17,6 @@ ReactDOM.render(
 );
 
 navigator.serviceWorker.register(
-  new URL('service-worker.js', import.meta.url),
+  new URL('./service-worker.js', import.meta.url),
   {type: 'module'}
 );
