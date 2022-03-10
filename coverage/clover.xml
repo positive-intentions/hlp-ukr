@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1646920387004" clover="3.2.0">
-  <project timestamp="1646920387004" name="All files">
-    <metrics statements="158" coveredstatements="109" conditionals="97" coveredconditionals="8" methods="29" coveredmethods="13" elements="284" coveredelements="130" complexity="0" loc="158" ncloc="158" packages="7" files="11" classes="11"/>
+<coverage generated="1646922471761" clover="3.2.0">
+  <project timestamp="1646922471761" name="All files">
+    <metrics statements="168" coveredstatements="117" conditionals="97" coveredconditionals="8" methods="30" coveredmethods="13" elements="295" coveredelements="138" complexity="0" loc="168" ncloc="168" packages="7" files="12" classes="12"/>
     <package name="graphql">
       <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="resolversMap.ts" path="/home/raju/repositories/hlp-ukr/src/graphql/resolversMap.ts">
@@ -48,18 +48,19 @@
       </file>
     </package>
     <package name="ui">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="App.tsx" path="/home/raju/repositories/hlp-ukr/src/ui/App.tsx">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
       </file>
     </package>
     <package name="ui.api">
@@ -76,9 +77,9 @@
       </file>
     </package>
     <package name="ui.components.mulecules">
-      <metrics statements="38" coveredstatements="37" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="9"/>
+      <metrics statements="39" coveredstatements="38" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="9"/>
       <file name="AppDrawer.tsx" path="/home/raju/repositories/hlp-ukr/src/ui/components/mulecules/AppDrawer.tsx">
-        <metrics statements="38" coveredstatements="37" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="9"/>
+        <metrics statements="39" coveredstatements="38" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="9"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
@@ -99,28 +100,29 @@
         <line num="22" count="2" type="stmt"/>
         <line num="23" count="2" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
-        <line num="26" count="2" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
-        <line num="37" count="4" type="stmt"/>
-        <line num="49" count="6" type="stmt"/>
-        <line num="62" count="2" type="stmt"/>
-        <line num="63" count="11" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
-        <line num="80" count="2" type="stmt"/>
-        <line num="81" count="11" type="stmt"/>
-        <line num="82" count="3" type="stmt"/>
-        <line num="101" count="2" type="stmt"/>
-        <line num="102" count="3" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="50" count="6" type="stmt"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="64" count="11" type="stmt"/>
+        <line num="65" count="3" type="stmt"/>
+        <line num="81" count="2" type="stmt"/>
+        <line num="82" count="11" type="stmt"/>
+        <line num="83" count="3" type="stmt"/>
+        <line num="102" count="2" type="stmt"/>
         <line num="103" count="3" type="stmt"/>
-        <line num="105" count="3" type="stmt"/>
-        <line num="106" count="1" type="stmt"/>
-        <line num="109" count="3" type="stmt"/>
-        <line num="110" count="0" type="stmt"/>
-        <line num="113" count="3" type="stmt"/>
+        <line num="104" count="3" type="stmt"/>
+        <line num="106" count="3" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="110" count="3" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
+        <line num="114" count="3" type="stmt"/>
       </file>
     </package>
     <package name="ui.components.pages">
-      <metrics statements="83" coveredstatements="35" conditionals="89" coveredconditionals="0" methods="16" coveredmethods="1"/>
+      <metrics statements="91" coveredstatements="41" conditionals="89" coveredconditionals="0" methods="17" coveredmethods="1"/>
       <file name="Calibration.tsx" path="/home/raju/repositories/hlp-ukr/src/ui/components/pages/Calibration.tsx">
         <metrics statements="15" coveredstatements="8" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -138,6 +140,17 @@
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
+      </file>
+      <file name="Engine.tsx" path="/home/raju/repositories/hlp-ukr/src/ui/components/pages/Engine.tsx">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
       <file name="Home.tsx" path="/home/raju/repositories/hlp-ukr/src/ui/components/pages/Home.tsx">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
