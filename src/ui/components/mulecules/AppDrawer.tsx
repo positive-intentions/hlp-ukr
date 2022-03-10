@@ -106,6 +106,10 @@ export default function AppDrawer({ children }: AppDrawerProps) {
     setOpen(!open);
   };
 
+  const handleCloseDrawer = () => {
+    setOpen(false);
+  }
+
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
@@ -140,6 +144,7 @@ export default function AppDrawer({ children }: AppDrawerProps) {
           <List>
             <ListItem
               button
+              onClick={handleCloseDrawer}
               component={Link}
               to="/home"
               data-testid="nav-home-button"
@@ -151,6 +156,7 @@ export default function AppDrawer({ children }: AppDrawerProps) {
             </ListItem>
             <ListItem
               button
+              onClick={handleCloseDrawer}
               component={Link}
               to="/calibration"
               data-testid="nav-calibration-button"
@@ -162,6 +168,7 @@ export default function AppDrawer({ children }: AppDrawerProps) {
             </ListItem>
             <ListItem
               button
+              onClick={handleCloseDrawer}
               component={Link}
               to="/order"
               data-testid="nav-order-button"
