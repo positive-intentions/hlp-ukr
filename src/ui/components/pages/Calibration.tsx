@@ -20,7 +20,7 @@ const Calibration = (): JSX.Element => {
       <Box sx={{mb: 2}}>
         <Typography variant="h3">{t("calibration.heading")}</Typography>
       </Box>
-      <img width="300px" src="https://source.unsplash.com/random/?kitten" />
+      <img width="300px" src="https://source.unsplash.com/random/?speedometer" />
       <Box sx={{mt: 2}}>
         <Typography>{t("calibration.network.heading")}</Typography>
       </Box>

@@ -20,6 +20,7 @@ import ListItemText from "@mui/material/ListItemText";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import DateRangeIcon from "@mui/icons-material/DateRange";
 import SpeedIcon from '@mui/icons-material/Speed';
+import GpsFixedIcon from '@mui/icons-material/GpsFixed';
 import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 
@@ -165,6 +166,18 @@ export default function AppDrawer({ children }: AppDrawerProps) {
                 <SpeedIcon />
               </ListItemIcon>
               <ListItemText primary="calibration" />
+            </ListItem>
+            <ListItem
+              button
+              onClick={handleCloseDrawer}
+              component={Link}
+              to="/engine"
+              data-testid="nav-engine-button"
+            >
+              <ListItemIcon>
+                <GpsFixedIcon />
+              </ListItemIcon>
+              <ListItemText primary="Engine" />
             </ListItem>
             <ListItem
               button
