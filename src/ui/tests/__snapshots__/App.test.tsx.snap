@@ -113,6 +113,40 @@ exports[`App component renders the app component: app.png 1`] = `
             </a>
             <a
               class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-bshv44-MuiButtonBase-root-MuiListItem-root"
+              data-testid="nav-calibration-button"
+              href="#/calibration"
+              tabindex="0"
+            >
+              <div
+                class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="SpeedIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="m20.38 8.57-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44zm-9.79 6.84a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"
+                  />
+                </svg>
+              </div>
+              <div
+                class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+              >
+                <span
+                  class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                >
+                  calibration
+                </span>
+              </div>
+              <span
+                class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+              />
+            </a>
+            <a
+              class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-bshv44-MuiButtonBase-root-MuiListItem-root"
               data-testid="nav-order-button"
               href="#/order"
               tabindex="0"
@@ -155,15 +189,28 @@ exports[`App component renders the app component: app.png 1`] = `
       <div
         class="css-1u2mxbp"
       />
-      <h3
-        class="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+      <div
+        class="MuiBox-root css-1qm1lh"
       >
-        home.heading
-      </h3>
+        <h3
+          class="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+        >
+          home.heading
+        </h3>
+      </div>
       <img
-        src="https://source.unsplash.com/random/?ukraine"
-        width="100%"
+        src="https://source.unsplash.com/random/?kitten"
+        width="300px"
       />
+      <div
+        class="MuiBox-root css-1yuhvjn"
+      >
+        <p
+          class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+        >
+          home.content
+        </p>
+      </div>
     </main>
   </div>
 </div>

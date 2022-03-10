@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import { useTranslation } from "react-i18next";
 import React from "react";
 
-const memoryInfo = performance.memory;
+const memoryInfo = performance['memory'];
 
 const bytesToSize = (bytes) => {
     const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
